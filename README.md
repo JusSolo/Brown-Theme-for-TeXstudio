@@ -1,51 +1,57 @@
 # Brown-Theme-for-TeXstudio
 Jus a brown color schem for TexStudio
 
+Download an unzip this repo. 
 
-<img src="TexStudio.png" alt="Brown Theme Banner" width="100%">
-
-*A warm TeXstudio theme.*
-
+#  Install manually just the code theme
 
 
----
+    - 1. Backup your previous TeXstudio settings: Options > Save Profile
+    - 2.  Options > Load Profile and load Brown_perfil.txsprofile.
+    (Optional) Works better with Orion Dark: Options > Configure TeXstudio and change the Style.
+    Restart and boom! It's working!
 
----
 
-# Installation
+
+
+# Install the interface colors
 
 ## Linux
 
-Locate your TeXstudio configuration directory:
+
+
+The TeXstudio configuration directory is usually
 
 ```bash
-~/.config/texstudio/
+cd ~/.config/texstudio/
 ```
 
-Copy the theme files:
+Copy the files
 
 ```bash
-cp Coffee.qss ~/.config/texstudio/
-cp Coffee.txsprofile ~/.config/texstudio/
+cp ~/Downloads/Brown-Theme-for-TeXstudio/Brown_stylesheet.qss tylesheet.qss
 ```
+
+
 
 Restart TeXstudio.
+
 
 ---
 
 ## macOS
 
-Configuration directory:
+Configuration directory
 
 ```bash
-~/Library/Application Support/texstudio/
+cd ~/.config/texstudio/
 ```
 
-Copy the files:
+Copy the files
 
 ```bash
-cp Coffee.qss ~/Library/Application\ Support/texstudio/
-cp Coffee.txsprofile ~/Library/Application\ Support/texstudio/
+cp~/Downloads/Brown-Theme-for-TeXstudio/Brown_stylesheet.qss stylesheet.qss
+
 ```
 
 Restart TeXstudio.
@@ -54,65 +60,27 @@ Restart TeXstudio.
 
 ## Windows
 
-Open:
+Open
 
 ```text
 %APPDATA%\texstudio\
 ```
 
-Copy:
+Copy
 
-```
-Coffee.qss
-Coffee.txsprofile
+```text
+Brown_stylesheet.qss
+
 ```
 
 Restart TeXstudio.
 
 ---
 
-# ⚙️ Enable the Theme
 
-Open:
-
-```
-Options → Configure TeXstudio
-```
-
-Select the theme or import the provided profile.
-
----
-
-# 📁 Project Structure
-
-```text
-.
-├── Coffee.qss
-├── Coffee.txsprofile
-├── assets
-│   ├── banner.png
-│   └── preview.png
-└── README.md
-```
-
----
-
-# 🖼 Preview
-
-<p align="center">
-<img src="assets/preview.png" width="90%">
-</p>
-
----
-
-# 🤝 Contributing
+# Contributing
 
 Pull requests are welcome.
 
 If you find inconsistencies or want to improve the theme, feel free to open an issue.
 
----
-
-# 📄 License
-
-Released under the MIT License.
