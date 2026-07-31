@@ -1,15 +1,16 @@
 # Brown-Theme-for-TeXstudio
 Jus a brown color schem for TexStudio
+<img src="TexStudio.png" alt="Brown Theme Preview" width="100%">
 
 Download an unzip this repo. 
 
 #  Install manually just the code theme
 
 
-    - 1. Backup your previous TeXstudio settings: Options > Save Profile
-    - 2.  Options > Load Profile and load Brown_perfil.txsprofile.
-    (Optional) Works better with Orion Dark: Options > Configure TeXstudio and change the Style.
-    Restart and boom! It's working!
+- 1. Backup your previous TeXstudio settings: Options > Save Profile
+- 2.  Options > Load Profile and load Brown_perfil.txsprofile.
+(Optional) Works better with Orion Dark: Options > Configure TeXstudio and change the Style.
+Restart and boom! It's working!
 
 
 
