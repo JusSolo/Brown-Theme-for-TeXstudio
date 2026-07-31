@@ -1,0 +1,237 @@
+/*
+ ClaudeTeX v3
+ Warm theme for TeXstudio
+*/
+
+QWidget{
+    background:#1A1614;
+    color:#F5E6D3;
+    selection-background-color:#E67D22;
+    selection-color:#1A1614;
+    alternate-background-color:#211A17;
+    outline:none;
+}
+
+/* Depth */
+QMainWindow,QDialog,QStackedWidget,QScrollArea{
+    background:#1A1614;
+}
+
+QFrame{
+    background:#211A17;
+    border:1px solid #31261E;
+}
+
+/* Dock widgets */
+QDockWidget{
+    background:#211A17;
+    border:1px solid #3A2C20;
+}
+QDockWidget::title{
+    background:#241D18;
+    color:#F5E6D3;
+    padding:7px;
+    border-bottom:1px solid #4A3A2A;
+    font-weight:600;
+}
+
+/* Toolbox (Git, Symbols, etc.) */
+QToolBox{
+    background:#211A17;
+    border:none;
+}
+QToolBox::tab{
+    background:#241D18;
+    color:#CDB79E;
+    border:1px solid #3A2C20;
+    border-radius:6px;
+    padding:6px;
+}
+QToolBox::tab:selected{
+    background:#2D2314;
+    color:#F5E6D3;
+    border-left:3px solid #E67D22;
+}
+
+/* Views */
+QAbstractItemView,
+QTreeView,
+QTreeWidget,
+QListView,
+QListWidget,
+QTableView{
+    background:#201916;
+    color:#F5E6D3;
+    border:1px solid #31261E;
+    alternate-background-color:#241D18;
+    show-decoration-selected:1;
+}
+QAbstractItemView::item{
+    padding:4px;
+}
+QAbstractItemView::item:hover{
+    background:#34271E;
+}
+QAbstractItemView::item:selected{
+    background:#E67D22;
+    color:#1A1614;
+}
+
+/* Tabs */
+QTabWidget::pane{
+    background:#1A1614;
+    border-top:1px solid #3A2C20;
+}
+QTabBar::tab{
+    background:#241D18;
+    color:#BFA98E;
+    border:1px solid #3A2C20;
+    border-bottom:none;
+    border-top-left-radius:8px;
+    border-top-right-radius:8px;
+    min-width:120px;
+    padding:8px 16px;
+    margin-right:2px;
+}
+QTabBar::tab:selected{
+    background:#2D2314;
+    color:#F5E6D3;
+    border-top:3px solid #E67D22;
+}
+QTabBar::tab:hover{
+    background:#372C24;
+}
+
+/* Menus */
+QMenuBar,QMenu,QStatusBar,QToolBar{
+    background:#231C18;
+    color:#F5E6D3;
+}
+QMenuBar::item:selected,
+QMenu::item:selected{
+    background:#34271E;
+    color:#E67D22;
+}
+
+/* Buttons */
+QPushButton,QToolButton{
+    background:#2C241F;
+    color:#F5E6D3;
+    border:1px solid #4A3A2A;
+    border-radius:6px;
+    padding:5px 10px;
+}
+QPushButton:hover,QToolButton:hover{
+    background:#3A2C20;
+}
+QPushButton:pressed,QToolButton:pressed{
+    background:#E67D22;
+    color:#1A1614;
+}
+
+/* Editors */
+QLineEdit,QTextEdit,QPlainTextEdit,QComboBox,QSpinBox{
+    background:#241D18;
+    border:1px solid #4A3A2A;
+    border-radius:5px;
+    padding:4px;
+}
+QLineEdit:focus,QTextEdit:focus,QPlainTextEdit:focus,QComboBox:focus{
+    border:1px solid #E67D22;
+}
+
+/* Group boxes */
+QGroupBox{
+    border:1px solid #3A2C20;
+    border-radius:6px;
+    margin-top:10px;
+    padding-top:10px;
+}
+QGroupBox::title{
+    subcontrol-origin:margin;
+    left:8px;
+    color:#CDB79E;
+}
+
+/* Scrollbars */
+QScrollBar:vertical{
+    background:#1A1614;
+    width:11px;
+}
+QScrollBar::handle:vertical{
+    background:#5A4636;
+    border-radius:5px;
+    min-height:24px;
+}
+QScrollBar::handle:vertical:hover{
+    background:#7A6048;
+}
+QScrollBar::add-line:vertical,QScrollBar::sub-line:vertical,
+QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical,
+QScrollBar:horizontal,QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal,QScrollBar::add-page:horizontal,
+QScrollBar::sub-page:horizontal{
+    background:transparent;
+    border:none;
+}
+QScrollBar::handle:horizontal{
+    background:#5A4636;
+    border-radius:5px;
+}
+
+/* Misc */
+QHeaderView::section{
+    background:#241D18;
+    color:#CDB79E;
+    border:1px solid #3A2C20;
+}
+QSplitter::handle{
+    background:#31261E;
+}
+QToolTip{
+    background:#2D2314;
+    color:#F5E6D3;
+    border:1px solid #E67D22;
+}
+/* --- Estilo para la viñeta emergente / ToolTip de sugerencias ortográficas --- */
+QToolTip {
+    background-color: #2D2314 !important;
+    color: #F5E6D3 !important;
+    border: 1px solid #E67D22 !important;
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+
+/* --- Menú contextual que aparece al hacer clic derecho sobre una palabra con error --- */
+QMenu {
+    background-color: #231C18 !important;
+    color: #F5E6D3 !important;
+    border: 1px solid #4A3A2A !important;
+    padding: 4px;
+}
+
+QMenu::item {
+    background-color: transparent;
+    padding: 5px 20px 5px 10px;
+    border-radius: 4px;
+}
+
+QMenu::item:selected {
+    background-color: #34271E !important;
+    color: #E67D22 !important;
+}
+
+QMenu::separator {
+    height: 1px;
+    background: #31261E;
+    margin: 4px 0px;
+}
+
+/* --- Estilo para ventanas o desplegables emergentes (Popup Widgets) --- */
+QWidget[class*="Popup"],
+QFrame[class*="Popup"],
+QFrame[frameShape="6"] { /* QFrame::StyledPanel en menús flotantes */
+    background-color: #231C18 !important;
+    color: #F5E6D3 !important;
+    border: 1px solid #E67D22 !important;
+}
